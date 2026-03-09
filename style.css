@@ -539,7 +539,7 @@
 
         .service-section.visible .service-card {
             opacity: 1;
-            transform: translateX(0);
+            transform: translateX(0); 
         }
 
         .service-icon-wrap {
@@ -653,6 +653,7 @@
             font-size: 0.75rem;
             color: var(--text-secondary);
         }
+        
 
         /* FAQ Section */
         .faq {
