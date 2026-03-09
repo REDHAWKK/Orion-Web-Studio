@@ -1,0 +1,17 @@
+{
+  "name": "orionwebstudio",
+  "version": "1.0.0",
+  "description": "the official website for orion web studio",
+  "license": "ISC",
+  "author": "Oriarebun Princeton, Adeola Majiyagbe",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./style.css -o ./tailwind.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}
