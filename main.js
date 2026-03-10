@@ -71,17 +71,6 @@
                 }
             });
         });
-
-        // Contact Form
-        const contactForm = document.getElementById('contactForm');
-        const formSuccess = document.getElementById('formSuccess');
-
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            contactForm.style.display = 'none';
-            formSuccess.style.display = 'block';
-        });
-
         // Scroll Reveal Animation
         const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
         const serviceSections = document.querySelectorAll('.service-section[data-animate]');
@@ -99,6 +88,17 @@
 
         revealElements.forEach(el => revealObserver.observe(el));
         serviceSections.forEach(el => revealObserver.observe(el));
+
+        // Contact Form
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactForm.style.display = 'none';
+            formSuccess.style.display = 'block';
+        });
+
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
