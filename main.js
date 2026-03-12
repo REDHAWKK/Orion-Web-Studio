@@ -90,14 +90,17 @@
         serviceSections.forEach(el => revealObserver.observe(el));
 
         // Contact Form
-        const contactForm = document.getElementById('contactForm');
-        const formSuccess = document.getElementById('formSuccess');
+const params = new URLSearchParams(window.location.search);
 
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            contactForm.style.display = 'none';
-            formSuccess.style.display = 'block';
-        });
+if (params.get("success") === "true") {
+  const form = document.getElementById("contactForm");
+  const successDiv = document.getElementById("formSuccess");
+
+  if (form && successDiv) {
+    form.style.display = "none";
+    successDiv.style.display = "block";
+  }
+}
 
 
         // Smooth scroll for anchor links
