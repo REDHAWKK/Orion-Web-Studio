@@ -1,0 +1,177 @@
+    <section class="story">
+        <div class="story-container">
+            <div class="hero-story">
+                <div class="story-content reveal-left">
+                    <span class="hero-label">Our Story</span>
+                    <h3>From Passion to Premium</h3>
+                    <p>What started as a freelance passion project in 2016 has grown into a full-service web studio dedicated to crafting digital experiences that captivate and convert.</p>
+                    <p>We have had the privilege of working with startups, established brands, and everything in between—always bringing the same level of care and attention to every project.</p>
+                    <p>Our team combines strategic thinking with creative execution, ensuring that every website we build not only looks stunning but also performs exceptionally.</p>
+                </div>
+                <div class="story-image reveal-right">
+                    <img src="images/workspace_overhead.jpg" alt="Orion Web Studio team">
+                </div>
+            </div>
+
+            <div class="values-header reveal">
+                <span class="hero-label">Why Choose Us?</span>
+                <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.75rem; color: var(--text-primary);">Why Choose Us?</h3>
+            </div>
+
+<div class="values-grid">
+    <div class="value-card reveal">
+        <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+        </div>
+        <h4 class="value-title">Fast & Modern Websites</h4>
+        <p class="value-desc">
+            We build sleek, responsive websites that load quickly and look great on every device. Your business gets a professional online presence that leaves a strong first impression.
+        </p>
+    </div>
+
+    <div class="value-card reveal">
+        <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+        </div>
+        <h4 class="value-title">Reliable Website Management</h4>
+        <p class="value-desc">
+            We keep your website secure, updated, and running smoothly. From maintenance to technical fixes, we handle the backend so you can focus on your business.
+        </p>
+    </div>
+
+    <div class="value-card reveal">
+        <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+        </div>
+        <h4 class="value-title">Focused on Your Growth</h4>
+        <p class="value-desc">
+            Our goal is not just to launch a website but to help your business grow online with strong performance, user experience, and long-term support.
+        </p>
+    </div>
+    </div>
+    </div>
+</section>
+<style>
+    .story {
+    position: relative;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+            .story-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+        }
+        .hero-story {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+
+        .story-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .story-image {
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .values-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .value-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(26, 29, 35, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .value-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: rgba(200, 164, 100, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover .value-icon {
+            background: var(--gold);
+        }
+
+        .value-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--gold);
+            transition: color 0.3s ease;
+        }
+
+        .value-card:hover .value-icon svg {
+            color: white;
+        }
+
+        .value-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .value-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        @media (max-width: 1024px) {
+                        .hero-story {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+</style>
