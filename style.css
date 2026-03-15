@@ -48,6 +48,7 @@
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 0.12em;
+            color: var(--gold);
         }
 
         /* Grain Overlay */
@@ -319,7 +320,7 @@
         }
 
         .hero-subtitle {
-            color: var(--text-secondary);
+            color: var(--gold);
             font-size: 1.125rem;
             max-width: 600px;
             margin: 0 auto;
