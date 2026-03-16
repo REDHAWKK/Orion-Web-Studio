@@ -133,6 +133,12 @@
             font-size: 1.125rem;
             color: var(--text-primary);
         }
+        .logo-text-footer {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: var(--gold);
+        }
 
         .nav-pills {
             display: flex;
@@ -984,9 +990,6 @@
             }
 
 
-            .values-grid {
-                grid-template-columns: 1fr;
-            }
 
             .contact-grid {
                 grid-template-columns: 1fr;
