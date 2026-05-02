@@ -1,3 +1,6 @@
+        document.addEventListener("DOMContentLoaded", () => {
+  feather.replace();
+
         // Navigation scroll effect
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => {
@@ -112,4 +115,32 @@
     if (year) {
         year.textContent = new Date().getFullYear();
     }
-    
+
+    //Dark mode toggle
+const themeToggle = document.getElementById("themeToggle");
+
+function setThemeIcon(isDark) {
+    themeToggle.innerHTML = `<i data-feather="${isDark ? "sun" : "moon"}"></i>`;
+    feather.replace();
+}
+
+if (themeToggle) {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        setThemeIcon(true);
+    } else {
+        setThemeIcon(false);
+    }
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        const isDark = document.body.classList.contains("dark-mode");
+
+        setThemeIcon(isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+}
+});

@@ -1028,3 +1028,55 @@
                 text-align: center;
             }
         } 
+/* Dark Mode Toggle */
+.floating-theme-toggle {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 1200;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(26, 29, 35, 0.08);
+    background: var(--gold);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+}
+
+.floating-theme-toggle:hover {
+    transform: translateY(-3px);
+    background: var(--gold-dark);
+}
+
+.floating-theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+body.dark-mode {
+    --off-white: #0B0F17;
+    --text-primary: #F4F2EE;
+    --text-secondary: #B5B8BE;
+}
+
+body.dark-mode .nav.scrolled {
+    background: rgba(11, 15, 23, 0.9);
+}
+
+body.dark-mode .nav-pills,
+body.dark-mode .stat-card,
+body.dark-mode .faq-item,
+body.dark-mode .mobile-menu-panel {
+    background: #111827;
+}
+
+body.dark-mode .theme-toggle {
+    background: #111827;
+    color: white;
+    border-color: rgba(255,255,255,0.1);
+}
