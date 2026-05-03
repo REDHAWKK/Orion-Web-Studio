@@ -91,56 +91,50 @@
             justify-content: space-between;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-        }
+.logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+}
 
-        .logo-icon {
-            position: relative;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.nav-logo-img {
+    width: 64px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
 
-        .logo-icon::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gold);
-            border-radius: 8px;
-            transform: rotate(45deg) scale(0.75);
-            transition: all 0.3s ease;
-        }
+@media (max-width: 640px) {
+    .nav-container {
+        padding: 0 0.75rem;
+    }
+    .nav-logo-img {
+        width: 64px;
+    }
+}
 
-        .logo:hover .logo-icon::before {
-            transform: rotate(60deg) scale(0.9);
-        }
-
-        .logo-icon svg {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            color: white;
-        }
-
-        .logo-text {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 1.125rem;
-            color: var(--text-primary);
-        }
-        .logo-text-footer {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 1.125rem;
-            color: var(--gold);
-        }
-
+/* stack text */
+.logo-text-wrap {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+/* main brand */
+.logo-main {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+/* styled sub text */
+.logo-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-top: 2px;
+}
         .nav-pills {
             display: flex;
             align-items: center;
@@ -305,6 +299,7 @@
         .hero-header {
             text-align: center;
             margin-bottom: 5rem;
+            margin-top:1rem;
         }
 
         .hero-label {
